@@ -128,6 +128,7 @@ body::-webkit-scrollbar-thumb {
   padding: 8px 16px;
   border-radius: 980px;
   margin: 15px;
+  border: none;
 }
 
 .display-section .back-button {
@@ -253,6 +254,7 @@ nav .link-styled {
   padding: 8px 16px;
   border-radius: 980px;
   margin: 0 14px;
+  border: none;
 }
 
 .jumbotron-section .link {
@@ -279,6 +281,7 @@ nav .link-styled {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -341,13 +344,11 @@ nav .link-styled {
 .sound-section .text {
   display: inline-block;
   color: transparent;
-  background-image: linear-gradient(
-    90deg,
-    #1e3791 0%,
-    #2948b1 40%,
-    #3153c6 55%,
-    #385fda 60%
-  );
+  background-image: linear-gradient(90deg,
+      #1e3791 0%,
+      #2948b1 40%,
+      #3153c6 55%,
+      #385fda 60%);
   -webkit-background-clip: text;
   background-clip: text;
   padding-top: 0.5px;
@@ -399,6 +400,7 @@ nav .link-styled {
 }
 
 @media screen and (max-width: 990px) {
+
   .jumbotron-section .iphone-img,
   nav .link-styled {
     display: none;
@@ -441,4 +443,10 @@ nav .link-styled {
   .sound-section .content {
     max-width: 100%;
   }
+}
+
+.features-section {
+  background-color: wheat;
+  height: calc(100vh - 40px);
+
 }
